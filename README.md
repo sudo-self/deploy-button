@@ -4,7 +4,7 @@
   </a>
 </center>
 
-## <a href="https://buckert.jessejesse.com/deploy.html">deploy with workers button generator</a>
+## <a href="https://bucket.jessejesse.com/deploy.html">deploy with workers button generator</a>
 
 
 1. **Get your GitHub repository URL**:  
