@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy with Workers Button</title>
+
+    <!-- Icons and Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" sizes="192x192" href="favicon-192.png">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Windows and Theme Color -->
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Metadata -->
+    <meta name="title" content="Deploy with Workers Button">
+    <meta name="description" content="Create deploy buttons for GitHub repositories with Cloudflare Workers for seamless deployment">
+    <meta name="author" content="sudo-self">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bucket.jessejesse.com/deploy.html">
+    <meta property="og:title" content="Deploy with Workers Button">
+    <meta property="og:description" content="Create deploy buttons for GitHub repositories with Cloudflare Workers for seamless deployment">
+    <meta property="og:image" content="https://bucket.jessejesse.com/logo.png">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bucket.jessejesse.com/deploy.html">
+    <meta property="twitter:title" content="Deploy with Workers Button">
+    <meta property="twitter:description" content="Create deploy buttons for GitHub repositories with Cloudflare Workers for seamless deployment">
+    <meta property="twitter:image" content="https://bucket.jessejesse.com/logo.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1f2937;
+            color: #e5e7eb;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            background-color: #2d3748;
+            color: #e5e7eb;
+            border: 1px solid #4a5568;
+            border-radius: 4px;
+            padding: 10px;
+            width: calc(100% - 22px);
+            margin: 10px 0;
+        }
+
+        .button, .copy-button {
+            background-color: #12732b;
+            border: none;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 40%;
+            margin-bottom: 20px;
+        }
+
+        .button:hover, .copy-button:hover {
+            background-color: #e56e24;
+        }
+
+        .mockup-code {
+            color: #e5e7eb;
+            padding: 10px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            text-align: left;
+            margin-top: 20px;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Deploy with Workers</h1>
+        <button type="button" onclick="generateButton()" class="button">create button</button>
+
+        <form id="deployForm">
+            <input type="text" id="username" name="username" placeholder="GitHub Username" required class="input-field">
+            <input type="text" id="repo" name="repo" placeholder="Repository Name" required class="input-field">
+           
+            <div id="result" class="hidden">
+                <div id="button-container"></div>
+                <div class="mockup-code">
+                    <code id="markdownCode"></code>
+                </div>
+                <button class="copy-button" onclick="copyToClipboard()">copy button</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function generateButton() {
+            const username = document.getElementById('username').value.trim();
+            const repo = document.getElementById('repo').value.trim();
+
+            if (username && repo) {
+                const url = `https://deploy.workers.cloudflare.com/?url=https://github.com/${username}/${repo}`;
+                const buttonHtml = `
+                    <a href="${url}">
+                        <img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare Workers">
+                    </a>
+                `;
+                const markdownCode = `
+<center>
+  <a href="${url}">
+    <img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare Workers" />
+  </a>
+</center>
+                `;
+
+                document.getElementById('result').classList.remove('hidden');
+                document.getElementById('button-container').innerHTML = buttonHtml;
+                document.getElementById('markdownCode').textContent = markdownCode;
+            } else {
+                alert('Please enter both username and repository.');
+            }
+        }
+
+        function copyToClipboard() {
+            const codeElement = document.getElementById('markdownCode');
+            const range = document.createRange();
+            range.selectNode(codeElement);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert('Markdown code copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
+
