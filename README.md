@@ -1,8 +1,9 @@
-# Deploy to Cloudflare Workers
 
+<center>
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/sudo-self/deploy-button)
+</center>
 
-# Create Your Own "Deploy to Cloudflare Workers" Button
+## Create Your Own "Deploy to Cloudflare Workers" Button
 
 1. **Get your GitHub repository URL**:  
    You need the GitHub repository URL in the format `https://github.com/USERNAME/REPO`, where:
