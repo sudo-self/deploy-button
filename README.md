@@ -30,8 +30,6 @@
 
 <code>https://deploy.workers.cloudflare.com/?url=https://github.com/USERNAME/REPO)</code>
 
-After deploying, you need to configure the following secrets in your GitHub repository to enable automated deployments:
-
 ### GitHub Secrets for deploy.yml
 
 1. **Go to your GitHub repository.**
