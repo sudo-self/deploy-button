@@ -10,7 +10,7 @@
 ```
 <script src="https://sudo-self.github.io/deploy-button/deploy-button.js"></script>
 ```
-### <a href="https://github.com/sudo-self/deploy-button/deploy-button-webpage.html">Example Page</a>
+### Check out the&nbsp;<a href="https://sudo-self.github.io/deploy-button/deploy-button-webpage.html">Example Page</a>
 
 
    **Get your GitHub repository URL**: 
