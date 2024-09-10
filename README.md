@@ -5,7 +5,7 @@
   </a>
 </center><hr>
 
-### Use the&nbsp;<a href="https://bucket.jessejesse.com/deploy.html">Button Generator</a><br>
+### <a href="https://bucket.jessejesse.com/deploy.html">Button Generator</a><br>
 ### OR
 ### Embed the button widget on any webpage
 ```
