@@ -1,13 +1,9 @@
-<center><a href="https://bucket.jessejesse.com/deploy.html">deploy with workers button generator</a></center><hr>
-
+<center><a href="https://bucket.jessejesse.com/deploy.html">deploy with workers button generator</a></center><br>
   <center>
   <a href="https://deploy.workers.cloudflare.com/?url=https://github.com/sudo-self/deploy-button">
     <img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare Workers" />
   </a>
-</center>
-
-
-
+</center><hr>
 
    **Get your GitHub repository URL**:  
    You need the GitHub repository URL in the format `https://github.com/USERNAME/REPO`, where:
