@@ -6,7 +6,7 @@
 </center><hr>
 
 ### <a href="https://sudo-self.github.io/deploy-button">Button Generator</a><br>
-### Embed the button widget on any webpage
+### Embed the button generator on any webpage
 ```
 <script src="https://sudo-self.github.io/deploy-button/deploy-button.js"></script>
 ```
