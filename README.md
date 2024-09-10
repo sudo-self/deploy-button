@@ -39,27 +39,9 @@
 12. Repeat the process to add another secret:
    - For the **name**, enter `CF_ACCOUNT_ID` and paste your Cloudflare Account ID in the **Value** field.
 
-### Example GitHub Actions Workflow
+### Embed the button widget on any webpage
 
-GitHub Actions workflow (`.github/workflows/deploy.yml`) to automate deployments:
-
-```yaml
-name: Deploy Worker
-on:
-  push:
-  pull_request:
-  repository_dispatch:
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    steps:
-      - uses: actions/checkout@v2
-      - name: Build & Deploy Worker
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
-
+```
+<script src="https://bucket.jessejesse.com/deploy-button.js"></script>
 ```
 
