@@ -61,8 +61,7 @@
         }
     `;
     document.head.appendChild(style);
-
-  
+ 
     var button = document.createElement('button');
     button.className = 'floating-button';
     button.innerHTML = '+';
@@ -73,7 +72,7 @@
     popup.className = 'popup';
     popup.innerHTML = `
         <button class="close-button" onclick="closePopup()">×</button>
-        <iframe src="https://example.com" title="Example"></iframe>
+        <iframe src="https://sudo-self.github.io/deploy-button/" title="Deploy with workers"></iframe>
     `;
 
     document.body.appendChild(button);
