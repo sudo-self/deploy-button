@@ -10,7 +10,7 @@
 ```
 <script src="https://sudo-self.github.io/deploy-button/deploy-button.js"></script>
 ```
-### Embed the button widget on any webpage&nbsp;<a href="https://github.com/sudo-self/deploy-button/deploy-button-webpage.html">Example Page</a>
+### <a href="https://github.com/sudo-self/deploy-button/deploy-button-webpage.html">Example Page</a>
 
 
    **Get your GitHub repository URL**: 
