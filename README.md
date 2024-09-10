@@ -6,7 +6,10 @@
 </center><hr>
 
 ### <center><a href="https://bucket.jessejesse.com/deploy.html">deploy with workers button generator</a></center><br>
-
+### Embed the button widget on any webpage
+```
+<script src="https://sudo-self.github.io/deploy-button/deploy-button.js"></script>
+```
    **Get your GitHub repository URL**: 
    
    You need the GitHub repository URL in the format `https://github.com/USERNAME/REPO`, where:
@@ -14,14 +17,9 @@
    - `REPO` is the name of your repository.
 
    **Construct the deploy button URL**:  
- 
    ```
    https://deploy.workers.cloudflare.com/?url=https://github.com/USERNAME/REPO
    ```
 
-### Embed the button widget on any webpage
 
-```
-<script src="https://sudo-self.github.io/deploy-button/deploy-button.js"></script>
-```
 
