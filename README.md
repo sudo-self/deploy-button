@@ -6,14 +6,16 @@
 </center><hr>
 
 ### Use the&nbsp;<a href="https://bucket.jessejesse.com/deploy.html">Button Generator</a><br>
+### OR
 ### Embed the button widget on any webpage
 ```
 <script src="https://sudo-self.github.io/deploy-button/deploy-button.js"></script>
 ```
-### Check out the&nbsp;<a href="https://sudo-self.github.io/deploy-button/deploy-button-webpage.html">Example Page</a>
+### <a href="https://sudo-self.github.io/deploy-button/deploy-button-webpage.html">Example Page</a> 
 
+### create the button
 
-   **Get your GitHub repository URL**: 
+**Get your GitHub repository URL**: 
    
    You need the GitHub repository URL in the format `https://github.com/USERNAME/REPO`, where:
    - `USERNAME` is your GitHub username.
