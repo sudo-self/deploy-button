@@ -42,6 +42,6 @@
 ### Embed the button widget on any webpage
 
 ```
-<script src="https://bucket.jessejesse.com/deploy-button.js"></script>
+<script src="https://pub-c1de1cb456e74d6bbbee111ba9e6c757.r2.dev/deploy-button.js"></script>
 ```
 
