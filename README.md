@@ -23,25 +23,10 @@
 1. Log in to your Cloudflare dashboard: [Cloudflare Workers Dashboard](https://dash.cloudflare.com/?to=/:account/workers)
 2. Your Account ID can be found on the Workers dashboard.
 
-### Get Your Cloudflare API Token
-
-3. Go to your API Tokens page: [Cloudflare API Tokens](https://dash.cloudflare.com/profile/api-tokens)
-4. Create a new API token with the appropriate permissions if you don’t have one already.
-
-
-5. **Go to your GitHub repository.**
-5. Click on **Settings**.
-7. In the left sidebar, click on **Secrets and variables** (or **Secrets**).
-8. Under **Secrets and variables**, click on **Actions**.
-9. Click **New repository secret** to add a new secret.
-10. For the **name**, enter `CF_API_TOKEN` and paste your Cloudflare API Token in the **Value** field.
-11. Click **Add secret**.
-12. Repeat the process to add another secret:
-   - For the **name**, enter `CF_ACCOUNT_ID` and paste your Cloudflare Account ID in the **Value** field.
 
 ### Embed the button widget on any webpage
 
 ```
-<script src="https://pub-c1de1cb456e74d6bbbee111ba9e6c757.r2.dev/deploy-button.js"></script>
+<script src="https://sudo-self.github.io/deploy-button/deploy-button.js"></script>
 ```
 
