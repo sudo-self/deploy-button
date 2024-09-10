@@ -5,11 +5,14 @@
   </a>
 </center><hr>
 
-### <center><a href="https://bucket.jessejesse.com/deploy.html">deploy with workers button generator</a></center><br>
+### Use the&nbsp;<a href="https://bucket.jessejesse.com/deploy.html">Button Generator</a><br>
 ### Embed the button widget on any webpage
 ```
 <script src="https://sudo-self.github.io/deploy-button/deploy-button.js"></script>
 ```
+### Embed the button widget on any webpage&nbsp;<a href="https://github.com/sudo-self/deploy-button/deploy-button-webpage.html">Example Page</a>
+
+
    **Get your GitHub repository URL**: 
    
    You need the GitHub repository URL in the format `https://github.com/USERNAME/REPO`, where:
